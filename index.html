@@ -51,8 +51,10 @@
                 }
                 if (playerScore>computerScore) {
                     console.log(`You've beaten the computer this round with a score of ${playerScore}!`);
-                } else {
+                } else if (computerScore>playerScore) {
                     console.log(`The computer has beaten you this round with a score of ${computerScore}!`);
+                } else {
+                    console.log(`This round is a tie! Very rare.`);
                 }
             }
             game(); 
